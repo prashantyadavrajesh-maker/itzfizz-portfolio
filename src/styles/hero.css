@@ -1,0 +1,377 @@
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 100vh;
+
+  padding: 110px 5% 70px;
+
+  box-sizing: border-box;
+
+  background: #02163b;
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* =================================
+   HERO CONTENT
+================================= */
+
+.hero-content {
+  width: 100%;
+  max-width: 1450px;
+
+  min-width: 0;
+
+  min-height: calc(100vh - 180px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 55px;
+}
+
+/* =================================
+   LEFT SIDE
+================================= */
+
+.hero-left {
+  width: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+}
+
+.hero-title {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0;
+
+  font-size: clamp(3.8rem, 5.5vw, 6rem);
+
+  line-height: 0.95;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #ffffff;
+
+  overflow-wrap: break-word;
+}
+
+.hero-title span {
+  display: inline-block;
+
+  color: #18a7ff;
+}
+
+.tech-stack {
+  margin: 28px 0 30px;
+
+  color: #d5e1ef;
+
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+
+  line-height: 1.5;
+}
+
+.hero-heading {
+  width: 100%;
+
+  margin: 0 0 18px;
+
+  color: #ffffff;
+
+  font-size: clamp(2.2rem, 3.3vw, 4rem);
+
+  line-height: 1.12;
+
+  font-weight: 700;
+
+  overflow-wrap: break-word;
+}
+
+.hero-description {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #c5d2e1;
+
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+
+  line-height: 1.75;
+}
+
+/* =================================
+   STATS
+================================= */
+
+.stats {
+  width: 100%;
+
+  margin-top: 35px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.stat-card {
+  width: 155px;
+  min-height: 110px;
+
+  padding: 18px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid #18a7ff;
+
+  border-radius: 18px;
+
+  opacity: 1;
+
+  flex-shrink: 0;
+}
+
+.stat-card h3 {
+  margin: 0 0 8px;
+
+  color: #18a7ff;
+
+  font-size: 2rem;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.stat-card p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 0.9rem;
+
+  line-height: 1.3;
+}
+
+/* =================================
+   RIGHT SIDE
+================================= */
+
+.hero-right {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 680px;
+
+  height: auto;
+
+  display: block;
+
+  margin: 0 auto;
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(24, 167, 255, 0.45);
+
+  box-shadow:
+    0 0 25px rgba(24, 167, 255, 0.25),
+    0 0 55px rgba(24, 167, 255, 0.12);
+
+  will-change: transform;
+}
+
+/* =================================
+   LAPTOP / SMALL DESKTOP
+================================= */
+
+@media (max-width: 1100px) {
+  .hero {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .hero-content {
+    gap: 35px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .hero-heading {
+    font-size: 2.8rem;
+  }
+
+  .stat-card {
+    width: 145px;
+  }
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 850px) {
+  .hero {
+    padding: 105px 25px 60px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    gap: 45px;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 11vw, 5rem);
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 95px 18px 50px;
+  }
+
+  .hero-content {
+    gap: 35px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+
+    letter-spacing: 1px;
+  }
+
+  .tech-stack {
+    margin-top: 20px;
+
+    font-size: 1rem;
+  }
+
+  .hero-heading {
+    font-size: 2.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+  }
+
+  .stats {
+    gap: 12px;
+
+    justify-content: center;
+  }
+
+  .stat-card {
+    width: calc(50% - 6px);
+
+    min-height: 105px;
+  }
+
+  .stat-card:last-child {
+    width: 100%;
+    max-width: 170px;
+
+    margin: 0 auto;
+  }
+
+  .stat-card h3 {
+    font-size: 1.7rem;
+  }
+
+  .hero-image {
+    border-radius: 18px;
+  }
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 380px) {
+  .hero {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-heading {
+    font-size: 1.9rem;
+  }
+
+  .stat-card {
+    width: 100%;
+    max-width: 190px;
+
+    margin: 0 auto;
+  }
+}

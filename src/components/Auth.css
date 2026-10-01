@@ -1,0 +1,194 @@
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 8, 25, 0.78);
+
+  backdrop-filter: blur(8px);
+}
+
+.auth-box {
+  position: relative;
+
+  width: 100%;
+  max-width: 460px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+  background: #071d3f;
+
+  border: 1px solid rgba(24, 167, 255, 0.45);
+
+  box-shadow:
+    0 0 30px rgba(24, 167, 255, 0.2),
+    0 20px 70px rgba(0, 0, 0, 0.45);
+}
+
+.auth-close {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+.auth-tag {
+  margin: 0 0 12px;
+
+  color: #18a7ff;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.auth-box h2 {
+  margin: 0 0 12px;
+
+  color: white;
+
+  font-size: 2.3rem;
+}
+
+.auth-box h2 span {
+  color: #18a7ff;
+}
+
+.auth-description {
+  margin: 0 0 28px;
+
+  color: #aebdd0;
+
+  line-height: 1.6;
+}
+
+.auth-field {
+  margin-bottom: 18px;
+}
+
+.auth-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: white;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+.auth-field input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 14px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 12px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: white;
+
+  font-size: 1rem;
+}
+
+.auth-field input::placeholder {
+  color: #71829a;
+}
+
+.auth-field input:focus {
+  border-color: #18a7ff;
+
+  box-shadow: 0 0 12px rgba(24, 167, 255, 0.15);
+}
+
+.auth-submit {
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #18a7ff;
+
+  color: #03163b;
+
+  font-weight: 700;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.auth-submit:hover {
+  background: #0d94e6;
+}
+
+.auth-switch {
+  margin: 22px 0 0;
+
+  text-align: center;
+
+  color: #aebdd0;
+
+  font-size: 0.9rem;
+}
+
+.auth-switch button {
+  padding: 0;
+
+  border: none;
+
+  background: none;
+
+  color: #18a7ff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .auth-box {
+    padding: 30px 22px;
+  }
+
+  .auth-box h2 {
+    font-size: 2rem;
+  }
+}
